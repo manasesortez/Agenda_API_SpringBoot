@@ -1,6 +1,5 @@
 package com.example.restservice.models;
 
-import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "appointment")

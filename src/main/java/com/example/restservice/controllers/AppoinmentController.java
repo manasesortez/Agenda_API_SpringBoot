@@ -22,6 +22,7 @@ public class AppoinmentController {
     public List<Appoinment> getAppoinments(){
         return appoinmentDao.getAppoinments();
     }
+
     @RequestMapping(value = "api/appointment",method = RequestMethod.POST)
     public void createAppoinment(@RequestBody Appoinment appoinment){
         appoinmentDao.createAppoinment(appoinment);
@@ -34,6 +35,9 @@ public class AppoinmentController {
 
     @RequestMapping(value = "api/appointment",method = RequestMethod.PUT)
     public void updateAppoinment(@RequestBody Appoinment appoinment){
+        appoinment.setAppointmentDate(appoinment.getAppointmentDate());
+        appoinment.setAppointmentDescription(appoinment.getAppointmentDescription());
+        appoinment.setId(appoinment.getId());
         appoinmentDao.updateAppoinment(appoinment);
     }
 }

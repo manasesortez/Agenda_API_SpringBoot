@@ -39,10 +39,10 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`appointment_id`, `appointment_date`, `appointment_description`, `contact_id`) VALUES
-(1, '2021-11-30 10:30:00', 'Date with my wife the november 30', 5),
-(2, '2021-11-20 12:00:00', 'Visit to Doctor Cristian', 4),
-(3, '2021-12-01 07:00:00', 'Birthday of my dad', 1),
-(4, '2021-11-04 08:00:00', 'appointment with manuel in your house', 2);
+(null, '2021-11-30 10:30:00', 'Date with my wife the november 30', 5),
+(null, '2021-11-20 12:00:00', 'Visit to Doctor Cristian', 4),
+(null, '2021-12-01 07:00:00', 'Birthday of my dad', 1),
+(null, '2021-11-04 08:00:00', 'appointment with manuel in your house', 2);
 
 -- --------------------------------------------------------
 
@@ -66,11 +66,11 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`contact_id`, `contact_name`, `contact_lastname`, `contact_number`, `conctact_email`, `contact_adress`, `type_id`, `id_user`) VALUES
-(1, 'Jose Alberto', 'Perez', '2278-9076', 'joalb@gmail.com', 'Alta Vista SS', 2, 1),
-(2, 'Manuel Enrique', 'Gonzales Martinez', '2669-2312', 'gonzales23@hotmail.com', 'Mira Montes', 1, 1),
-(3, 'Manuel', 'Villatoro', '2661-9890', 'manvill@gmail.com', 'San Vicente', 3, 1),
-(4, 'Cristian josue', 'Campos', '2678-9067', 'camp@outlook.com', 'San Miguel', 4, 1),
-(5, 'Marta Aurora', 'Garcia', '2390-8956', 'martgar@gmail.com', 'San Salvador, Flor Blanca', 5, 1);
+(0, 'Jose Alberto', 'Perez', '2278-9076', 'joalb@gmail.com', 'Alta Vista SS', 2, 1),
+(0, 'Manuel Enrique', 'Gonzales Martinez', '2669-2312', 'gonzales23@hotmail.com', 'Mira Montes', 1, 1),
+(0, 'Manuel', 'Villatoro', '2661-9890', 'manvill@gmail.com', 'San Vicente', 3, 1),
+(0, 'Cristian josue', 'Campos', '2678-9067', 'camp@outlook.com', 'San Miguel', 4, 1),
+(0, 'Marta Aurora', 'Garcia', '2390-8956', 'martgar@gmail.com', 'San Salvador, Flor Blanca', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -88,7 +88,7 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`id_rol`, `rol`) VALUES
-(1, 'Admin');
+(0, 'Admin');
 
 -- --------------------------------------------------------
 
@@ -106,12 +106,12 @@ CREATE TABLE `type_contacts` (
 --
 
 INSERT INTO `type_contacts` (`type_id`, `type_name`) VALUES
-(1, 'Family'),
-(2, 'Friend'),
-(3, 'Job'),
-(4, 'Doctors'),
-(5, 'Wife'),
-(6, 'Husband');
+(0, 'Family'),
+(0, 'Friend'),
+(0, 'Job'),
+(0, 'Doctors'),
+(0, 'Wife'),
+(0, 'Husband');
 
 -- --------------------------------------------------------
 
