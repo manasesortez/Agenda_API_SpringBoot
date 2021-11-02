@@ -17,26 +17,29 @@ public class AppoinmentDaoImp implements AppoinmentDao{
 
     @Override
     public List<Appoinment> getAppoinments() {
-        return null;
+        String query = String.format("FROM Appoinment");
+        return entityManager.createQuery(query).getResultList();
     }
 
     @Override
     public Appoinment getAppoinment(int id) {
-        return null;
+        String query = String.format("FROM Appoinment AP WHERE AP.id = %d", id);
+        return (Appoinment) entityManager.createQuery(query).getSingleResult();
     }
 
     @Override
     public void updateAppoinment(Appoinment appoinment) {
-
+        entityManager.merge(appoinment);
     }
 
     @Override
     public void deleteAppoinment(int id) {
-
+        Appoinment appoinment = entityManager.find(Appoinment.class, id);
+        entityManager.remove(appoinment);
     }
 
     @Override
     public void createAppoinment(Appoinment appoinment) {
-
+        entityManager.merge(appoinment);
     }
 }

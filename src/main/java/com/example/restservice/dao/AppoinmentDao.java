@@ -1,10 +1,7 @@
 package com.example.restservice.dao;
 
-import com.example.restservice.models.ContactType;
-import com.example.restservice.models.User;
 import com.example.restservice.models.Appoinment;
 
-import java.util.Date;
 import java.util.List;
 
 public interface AppoinmentDao {
