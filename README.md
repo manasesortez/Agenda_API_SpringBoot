@@ -3,9 +3,6 @@
 [![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-Minimal [Spring Boot](http://projects.spring.io/spring-boot/) sample app.
-
 ## Requirements
 
 For building and running the application you need:
@@ -15,13 +12,8 @@ For building and running the application you need:
 
 ## Running the application locally
 
-There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `de.codecentric.springbootsample.Application` class from your IDE.
+To start the application configuration go to the `design` folder and enter the` agenda.sql` file
 
-Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
-
-```shell
-mvn spring-boot:run
-```
 
 ## Deploying the application to OpenShift
 
@@ -47,4 +39,4 @@ oc expose springboot-sample-app --hostname=www.example.com
 
 ## Copyright
 
-Released under the Apache License 2.0. See the [LICENSE](https://github.com/codecentric/springboot-sample-app/blob/master/LICENSE) file.
+Released under the MIT License See the [LICENSE](https://github.com/manasesortez/Agenda_API_SpringBoot/blob/master/LICENSE) file.
