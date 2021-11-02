@@ -1,7 +1,6 @@
 package com.example.restservice.dao;
 
 import com.example.restservice.models.ContactType;
-import com.example.restservice.models.Product;
 
 import java.util.List;
 

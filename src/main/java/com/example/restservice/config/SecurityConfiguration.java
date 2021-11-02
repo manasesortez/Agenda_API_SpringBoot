@@ -43,7 +43,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         "/webjars/**",
                         "/create-account"
                 ).permitAll()
-                .antMatchers(HttpMethod.GET,"/api/products","/api/products/**").permitAll()
+                .antMatchers(HttpMethod.GET,"/api/contact","/api/contacts/**").permitAll()
                 .antMatchers("/api/**","/create-admin").permitAll()
                 .anyRequest().authenticated()
                 .and().sessionManagement()

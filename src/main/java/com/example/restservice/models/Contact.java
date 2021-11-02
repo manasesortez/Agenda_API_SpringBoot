@@ -37,7 +37,7 @@ public class Contact {
     public User getUserId() {
         return userId;
     }
-    public void setIdProductType(User userId) {
+    public void setUserId(User userId) {
         this.userId = userId;
     }
 
