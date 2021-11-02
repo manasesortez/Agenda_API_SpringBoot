@@ -44,7 +44,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         "/create-account"
                 ).permitAll()
                 .antMatchers(HttpMethod.GET,"/api/products","/api/products/**").permitAll()
-                .antMatchers("/api/**","/create-admin").hasRole("Admin")
+                .antMatchers("/api/**","/create-admin").permitAll()
                 .anyRequest().authenticated()
                 .and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
