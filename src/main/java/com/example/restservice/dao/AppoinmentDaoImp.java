@@ -23,7 +23,7 @@ public class AppoinmentDaoImp implements AppoinmentDao{
 
     @Override
     public Appoinment getAppoinment(int id) {
-        String query = String.format("FROM Appoinment AP WHERE AP.id = %d", id);
+        String query = String.format("FROM Appoinment A WHERE A.id = %d", id);
         return (Appoinment) entityManager.createQuery(query).getSingleResult();
     }
 

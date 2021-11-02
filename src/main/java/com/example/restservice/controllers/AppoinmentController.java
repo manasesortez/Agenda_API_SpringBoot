@@ -8,31 +8,31 @@ import com.example.restservice.dao.AppoinmentDao;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "**")
 public class AppoinmentController {
     @Autowired
     AppoinmentDao appoinmentDao;
 
-    @RequestMapping(value = "api/appoinment/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "api/appointment/{id}",method = RequestMethod.GET)
     public Appoinment getAppoinment(@PathVariable int id){
         return appoinmentDao.getAppoinment(id);
     }
 
-    @RequestMapping(value = "api/appoinments",method = RequestMethod.GET)
+    @RequestMapping(value = "api/appointments",method = RequestMethod.GET)
     public List<Appoinment> getAppoinments(){
         return appoinmentDao.getAppoinments();
     }
-    @RequestMapping(value = "api/appoinment",method = RequestMethod.POST)
+    @RequestMapping(value = "api/appointment",method = RequestMethod.POST)
     public void createAppoinment(@RequestBody Appoinment appoinment){
         appoinmentDao.createAppoinment(appoinment);
     }
 
-    @RequestMapping(value = "api/appoinment/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "api/appointment/{id}",method = RequestMethod.DELETE)
     public void deleteAppoinment(@PathVariable int id){
         appoinmentDao.deleteAppoinment(id);
     }
 
-    @RequestMapping(value = "api/appoinment",method = RequestMethod.PUT)
+    @RequestMapping(value = "api/appointment",method = RequestMethod.PUT)
     public void updateAppoinment(@RequestBody Appoinment appoinment){
         appoinmentDao.updateAppoinment(appoinment);
     }

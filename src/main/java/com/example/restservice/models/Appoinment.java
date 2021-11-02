@@ -1,6 +1,7 @@
 package com.example.restservice.models;
-import javax.persistence.*;
+
 import java.util.Date;
+import javax.persistence.*;
 
 @Table(name = "appointment")
 @Entity

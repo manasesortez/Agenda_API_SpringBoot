@@ -130,13 +130,6 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id_user`, `first_name`, `last_name`, `email`, `password`, `direccion`, `id_rol`) VALUES
-(1, 'fake', 'name', 'test1@fakemail.com', '123', 'San Salvador', 1);
-
---
 -- Indexes for dumped tables
 --
 
