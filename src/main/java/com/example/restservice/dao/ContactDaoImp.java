@@ -12,7 +12,6 @@ import java.util.List;
 @Transactional
 public class ContactDaoImp implements ContactDao{
 
-
     @PersistenceContext
     private EntityManager entityManager;
 
