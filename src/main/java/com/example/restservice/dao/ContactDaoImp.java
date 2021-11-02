@@ -12,31 +12,35 @@ import java.util.List;
 @Transactional
 public class ContactDaoImp implements ContactDao{
 
+
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public List<Contact> getContacts() {
-        return null;
+        String query = String.format("FROM Contact");
+        return entityManager.createQuery(query).getResultList();
     }
 
     @Override
     public Contact getContact(int id) {
-        return null;
+        String query = String.format("FROM Contact CO WHERE CO.id = %d", id);
+        return (Contact) entityManager.createQuery(query).getSingleResult();
     }
 
     @Override
     public void updateContact(Contact contact) {
-
+        entityManager.merge(contact);
     }
 
     @Override
     public void deleteContact(int id) {
-
+        Contact contact = entityManager.find(Contact.class, id);
+        entityManager.remove(contact);
     }
 
     @Override
     public void createContact(Contact contact) {
-
+        entityManager.merge(contact);
     }
 }
