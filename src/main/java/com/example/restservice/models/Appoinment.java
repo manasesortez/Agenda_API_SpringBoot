@@ -10,8 +10,8 @@ public class Appoinment {
     @Column(name = "appointment_id", nullable = false)
     private Integer id;
 
-    @Column(name = "appointment_date")
-    private Date appointmentDate;
+    @Column(name = "appointment_date", length = 50)
+    private String appointmentDate;
 
     @Column(name = "appointment_description", length = 100)
     private String appointmentDescription;
@@ -26,8 +26,8 @@ public class Appoinment {
     public String getAppointmentDescription(){return appointmentDescription;}
     public void setAppointmentDescription(String appointmentDescription){this.appointmentDescription = appointmentDescription;}
 
-    public Date getAppointmentDate(){return appointmentDate;}
-    public void setAppointmentDate(Date appointmentDate){this.appointmentDate = appointmentDate;}
+    public String getAppointmentDate(){return appointmentDate;}
+    public void setAppointmentDate(String appointmentDate){this.appointmentDate = appointmentDate;}
 
     public Integer getId(){return id;}
     public void setId(Integer id){this.id= id;}

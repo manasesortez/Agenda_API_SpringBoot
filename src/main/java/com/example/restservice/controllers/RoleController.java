@@ -36,6 +36,7 @@ public class RoleController {
 
     @RequestMapping(value = "api/roles", method = RequestMethod.PUT)
     public void updateRole(@RequestBody Role role){
-
+        role.setRol(role.getRol());
+        roleDao.updateRole(role);
     }
 }

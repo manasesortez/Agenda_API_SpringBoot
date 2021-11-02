@@ -1,0 +1,6 @@
+{
+  "timestamp": "2021-11-02T20:39:38.217+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/api/appoinments"
+}

@@ -36,6 +36,14 @@ public class ContactController {
     }
 
     @RequestMapping(value = "api/contact",method = RequestMethod.PUT)
-    public void deleteContact(@RequestBody ContactType contactType){
+    public void updateContact(@RequestBody Contact contact){
+        contact.setName(contact.getName());
+        contact.setLastname(contact.getLastname());
+        contact.setContactNumber(contact.getContactNumber());
+        contact.setConctactEmail(contact.getConctactEmail());
+        contact.setContactAddress(contact.getContactAddress());
+        contact.setTypeId(contact.getTypeId());
+        contact.setUserId(contact.getUserId());
+        contactDao.updateContact(contact);
     }
 }

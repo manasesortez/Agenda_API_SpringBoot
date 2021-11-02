@@ -36,5 +36,7 @@ public class ContactTypeController {
 
     @RequestMapping(value = "api/contactType",method = RequestMethod.PUT)
     public void updateContactType(@RequestBody ContactType contactType){
+        contactType.setContactType(contactType.getContactType());
+        contactTypeDao.updateContactType(contactType);
     }
 }
