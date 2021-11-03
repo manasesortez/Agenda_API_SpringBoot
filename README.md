@@ -27,13 +27,6 @@ For building and running the application you need:
 
 * If you got to this point and everything went well, congratulations, manipulate the API Agenda 🧑‍💻 💥 🔥
 
-If you want to access the app from outside your OpenShift installation, you have to expose the springboot-sample-app service:
-si usted quiere entrar a ver las dependencias estas se encuentra en:  
-
-``` 
-pom.xml
-```
-
 ## Autor
 
 amtoDev
