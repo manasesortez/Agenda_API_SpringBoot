@@ -12,7 +12,10 @@ For building and running the application you need:
 
 ## Running the application locally
 
-To start the application configuration go to the `design` folder and enter the` agenda.sql` file
+* First to start the application configuration go to the `design` folder and enter the` agenda.sql` file
+* Go to the following folder to configure the database `src -> main -> resources` and enter the file `application.properties`
+* Then create a new user tested, and add it to the database go to the following address `src -> test -> java` and enter the file` RestServiceApplicationTests`
+* If the user was already created then in test mode, go to an API request editor like `Postman` and enter inside it, in the `POST` option add the endpoint of `http: // localhost: 9001 / authenticate` and inside go to body and add the user was added to the database to authenticate as seen in the following photo
 
 
 ## Deploying the application to OpenShift
