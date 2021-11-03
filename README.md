@@ -14,7 +14,7 @@ For building and running the application you need:
 
 * First to start the application configuration go to the `design` folder and enter the` agenda.sql` file
 * Go to the following folder to configure the database `src -> main -> resources` and enter the file `application.properties`
-* Then create a new user tested, and add it to the database go to the following address `src -> test -> java` and enter the file` RestServiceApplicationTests`
+* Then create a new user tested, and add it to the database go to the following address `src -> test -> java` and enter the file ` RestServiceApplicationTests`
 * If the user was already created then in test mode, go to an API request editor like `Postman` and enter inside it, in the `POST` option add the endpoint of `http://localhost:{your_port}/authenticate` and inside go to body and add the user was added to the database to authenticate as seen in the following photo
 
 <img src="https://i.ibb.co/N9jsb98/Screenshot-from-2021-11-02-18-08-15.png"  width="600" height="400" />
